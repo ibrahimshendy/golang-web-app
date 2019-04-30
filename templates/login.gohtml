@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Go Site | Login </title>
+</head>
+<body>
+    <h1>Simple Login Form.</h1>
+
+    {{ if . }}
+        <div class="error">{{ . }}</div>
+    {{ end }}
+    <form method="POST" action="auth/login">
+        <div>
+            <p>Username:</p>
+            <input type="text" name="username">
+        </div>
+        <div>
+            <p>Password:</p>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <button type="submit"> Login  </button>
+            <a href="/register"> Create Account </a>
+        </div>
+    </form>
+    <em>For simple login form authentication use username "demo", password "demo123456" </em>
+</body>
+</html>

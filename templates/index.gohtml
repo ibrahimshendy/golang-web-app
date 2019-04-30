@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Go Site</title>
+</head>
+<body>
+    <h1>Home Page Content.</h1>
+
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/comments">Comments</a>
+    <section>
+        <img src="stuff/logo.png" alt="">
+    </section>
+
+    <h2> List Of Comments </h2>
+    <u>
+        {{ range . }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </u>
+</body>
+</html>
